@@ -1,0 +1,45 @@
+import java.util.*
+
+fun main() {
+    fun main() {
+        val sc = Scanner(System.in)
+        var num1: Float
+        var num2: Float
+        var op: Int
+
+        do {
+
+
+            println("***** CALCULADORA KOTLIN *****")
+    
+            println("Digite o primeiro número: ")
+            print("--> ")
+            num1 = sc.nextInt()
+    
+            println("Digite o segundo número: ")
+            print("--> ")
+            num2 = sc.nextInt()
+    
+            println("Digite a operação: ")
+            println("[1] Soma (a + b)")
+            println("[2] Subtração (a - b)")
+            println("[3] Multiplicação (a * b)")
+            println("[4] Divisão (a / b)")
+            println("[5] Sair")
+            print("--> ")
+            op = sc.nextInt()
+    
+            when (op) {
+                1 -> println("Resultado da soma: ${num1 + num2}")
+                2 -> println("Resultado da subtração: ${num1 - num2}")
+                3 -> println("Resultado da multiplicação: ${num1 * num2}")
+                4 -> println("Resultado da divisão: " + if (num2 != 0) (num1 / num2) else "Divisão por zero!")
+            }
+    
+        } while (op == 5)
+    
+        println("Até mais")
+    }
+
+
+}
