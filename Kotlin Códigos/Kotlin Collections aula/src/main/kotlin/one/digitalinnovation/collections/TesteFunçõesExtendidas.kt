@@ -13,5 +13,5 @@ fun main (){
 println("------------------------------------")
     println(salarios.media())
 
-
+//São funções que não estão na coleção original
 }
